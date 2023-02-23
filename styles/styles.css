@@ -1,0 +1,600 @@
+:root {
+  --primary-color: #9797C6; /*2-d background, titles text*/
+  --secondary-color: #9898C6; /*color for text*/
+  --tertiary-color: #616194; /*for TESTYMONIALS cards color*/
+  --quaternary-color: #FFFFFF; /*2-d titles text*/
+  --quinary-color: #F8F8FF; /*background for contact us*/
+  --form-color: #CECEF9;
+  --main-background-color: #FFFFFF;
+  --headers-font-size: 64px;
+  --headers-line-height: 80px;
+  --max-width: 1920px;
+  --border-radius: 20px;
+}
+
+/*
+    --gray: #928CAB;
+    --gray-light: #D4CDEF;
+
+    --header-line-color: #F4F5F4;
+
+
+    --border-radius: 8px;
+    --section-border-radius: 250px;
+    --max-width: 1920px;
+    --primary-space: 20px;
+    --secondary-space: 12px;
+
+}
+*/
+/*
+
+
+
+@mixin section($url, $position) {
+    background: linear-gradient(180deg, var(--main-background-color) 29.73%, var(--quaternary-color) 100%), url($url) no-repeat $position;
+}
+
+@mixin activeButton() {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+}
+*/
+/*General styles*/
+html {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+body {
+  font-family: "TT Hoves";
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--headers-font-size);
+  margin: 0;
+  line-height: var(--headers-line-height);
+  font-weight: 900;
+}
+
+.heading-wrapper {
+  margin: 0 auto;
+}
+
+/* Page styles */
+.heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  background-color: var(--main-background-color);
+  background-image: url("../assets/Union top.png"), url("../assets/Union bottom.png");
+  background-position: top center, bottom -325px center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1000px;
+}
+.heading-wrapper .social-media {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.heading-wrapper .social-media img {
+  align-items: baseline;
+}
+.heading-wrapper .social-media > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+  height: 24px;
+}
+.heading-wrapper .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 96px;
+  height: 486px;
+  width: 1081px;
+}
+.heading-wrapper .title .logo {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 390px; /*Font size 390px*/
+  color: var(--quaternary-color);
+  text-shadow: 0px 45px 49px rgba(140, 138, 198, 0.25);
+  margin: 0 auto;
+  max-width: 1920px;
+  margin: 0;
+}
+.heading-wrapper .title .logo p {
+  margin: -30px 0 0 0;
+}
+.heading-wrapper .title .slogan p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0 0 0;
+  max-width: 1920px;
+  align-items: center;
+}
+.scroll .scroll-service {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.scroll .scroll-service p {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  align-items: center;
+  color: var(--secondary-color);
+}
+.scroll .scroll-service .mouse {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 1335px;
+  gap: 50px;
+}
+.main .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  gap: 50px;
+  margin-top: 63px;
+}
+.main .services h1 {
+  color: var(--quaternary-color);
+}
+.main .services .services-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 52px;
+  margin: 0 22rem 0 22rem;
+}
+.main .services .services-cards .Handyman {
+  background: url("../assets/Handyman.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Handyman p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Plumber {
+  background: url("../assets/Plumbers.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Plumber p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Bike-Repair {
+  background: url("../assets/Bike Repair.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Bike-Repair p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Cleaning {
+  background: url("../assets/Cleaning.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Cleaning p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Moving {
+  background: url("../assets/Movers.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Moving p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Lawncare {
+  background: url("../assets/Lawncare.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Lawncare p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Trash-Hauling {
+  background: url("../assets/Trash Hauling.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Trash-Hauling p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .services .services-cards .Any {
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .services .services-cards .Any p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .anyServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  gap: 50px;
+  margin: 0;
+}
+.main .anyServices h1 {
+  color: var(--quaternary-color);
+}
+.main .anyServices .services-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 52px;
+  margin: 0 22rem 0 22rem;
+}
+.main .anyServices .services-cards .LK {
+  background: url("../assets/LK.jpg") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*:hover {
+    border-color: black;
+    text-decoration: underline;
+  }*/
+}
+.main .anyServices .services-cards .LK p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .anyServices .services-cards .UBN {
+  background: url("../assets/UBN.png") no-repeat center;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .anyServices .services-cards .UBN p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .anyServices .services-cards .Moving {
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .anyServices .services-cards .Moving p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+.main .anyServices .services-cards .Moving {
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  width: 262px;
+  height: 269px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .anyServices .services-cards .Moving p {
+  margin: 225px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+
+.minor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-background-color);
+  height: 714px;
+  gap: 50px;
+}
+.minor .Testymonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  gap: 50px;
+  margin-top: 63px;
+}
+.minor .Testymonials h1 {
+  color: var(--primary-color);
+  font-size: var(--headers-font-size);
+}
+.minor .Testymonials .cards_comments {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 365px 0 369px;
+}
+.minor .Testymonials .cards_comments .username_1 {
+  background-color: var(--main-background-color);
+  border: var(--tertiary-color) solid 1px;
+  border-radius: 30px;
+  border-color: var(--tertiary-color);
+  width: 512px;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 50px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_1 p {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_1 .comment_1 {
+  margin: 0;
+}
+.minor .Testymonials .cards_comments .username_1 .comment_1 p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 50px 20px 50px;
+}
+.minor .Testymonials .cards_comments .username_1 .comment_1 .rating_1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 5px;
+}
+.minor .Testymonials .cards_comments .username_2 {
+  background-color: var(--main-background-color);
+  border: var(--tertiary-color) solid 1px;
+  border-radius: 30px;
+  border-color: var(--tertiary-color);
+  width: 512px;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 50px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_2 p {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_2 .comment_2 {
+  margin: 0;
+}
+.minor .Testymonials .cards_comments .username_2 .comment_2 p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 50px 20px 50px;
+}
+.minor .Testymonials .cards_comments .username_2 .comment_2 .rating_2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 5px;
+}
+.minor .Testymonials .cards_comments .username_3 {
+  background-color: var(--main-background-color);
+  border: var(--tertiary-color) solid 1px;
+  border-radius: 30px;
+  border-color: var(--tertiary-color);
+  width: 512px;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 50px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_3 p {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_3 .comment_3 {
+  margin: 0;
+}
+.minor .Testymonials .cards_comments .username_3 .comment_3 p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 50px 20px 50px;
+}
+.minor .Testymonials .cards_comments .username_3 .comment_3 .rating_3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 5px;
+}
+.minor .Testymonials .cards_comments .username_4 {
+  background-color: var(--main-background-color);
+  border: var(--tertiary-color) solid 1px;
+  border-radius: 30px;
+  border-color: var(--tertiary-color);
+  width: 512px;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 50px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_4 p {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0 0 50px;
+}
+.minor .Testymonials .cards_comments .username_4 .comment_4 {
+  margin: 0;
+}
+.minor .Testymonials .cards_comments .username_4 .comment_4 p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 50px 20px 50px;
+}
+.minor .Testymonials .cards_comments .username_4 .comment_4 .rating_4 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 5px;
+}/*# sourceMappingURL=styles.css.map */

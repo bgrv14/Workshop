@@ -1,0 +1,414 @@
+@import "variables";
+@import "mixins";
+
+/*General styles*/
+html {
+  @include maxBlockWidth();
+}
+body {
+  font-family: "TT Hoves";
+  margin: 0;
+}
+h1 {
+  font-size: var(--headers-font-size);
+  margin: 0;
+  line-height: var(--headers-line-height);
+  font-weight: 900;
+}
+
+.heading-wrapper {
+  margin: 0 auto;
+}
+
+/* Page styles */
+.heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include maxBlockWidth();
+  background-color: var(--main-background-color);
+  background-image: url("../assets/Union top.png"),
+    url("../assets/Union bottom.png");
+  background-position: top center, bottom -325px center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1000px;
+
+  .social-media {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include maxBlockWidth();
+    & img {
+      align-items: baseline;
+    }
+  }
+  .social-media > ul {
+    @include navigation();
+    gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+    height: 24px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 96px;
+    height: 486px;
+    width: 1081px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 390px; /*Font size 390px*/
+      color: var(--quaternary-color);
+      text-shadow: 0px 45px 49px rgba(140, 138, 198, 0.25);
+      @include maxBlockWidth();
+      margin: 0;
+      & p {
+        margin: -30px 0 0 0;
+      }
+    }
+
+    .slogan {
+      & p {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0 0 0;
+
+  max-width: 1920px;
+  align-items: center;
+
+  .scroll-service {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    & p {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 500;
+      align-items: center;
+      color: var(--secondary-color);
+    }
+    .mouse {
+      display: flex;
+      flex-direction: row;
+      margin-right: 10px;
+    }
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 1335px;
+  gap: 50px;
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include maxBlockWidth();
+    gap: 50px;
+    margin-top: 63px;
+
+    & h1 {
+      color: var(--quaternary-color);
+    }
+    .services-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 52px;
+      margin: 0 22rem 0 22rem;
+
+      .Handyman {
+        background: url("../assets/Handyman.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName;
+        }
+       
+      }
+      .Plumber {
+        background: url("../assets/Plumbers.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName;
+        }
+      }
+      .Bike-Repair {
+        background: url("../assets/Bike Repair.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Cleaning {
+        background: url("../assets/Cleaning.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Moving {
+        background: url("../assets/Movers.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Lawncare {
+        background: url("../assets/Lawncare.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Trash-Hauling {
+        background: url("../assets/Trash Hauling.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Any {
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+    }
+  }
+  .anyServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include maxBlockWidth();
+    gap: 50px;
+    margin: 0;
+
+    & h1 {
+      color: var(--quaternary-color);
+    }
+    .services-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 52px;
+      margin: 0 22rem 0 22rem;
+
+      .LK {
+        background: url("../assets/LK.jpg") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName;
+        }
+        /*:hover {
+          border-color: black;
+          text-decoration: underline;
+        }*/
+      }
+      .UBN {
+        background: url("../assets/UBN.png") no-repeat center;
+        @include cards();
+
+        & p {
+          @include cardsName;
+        }
+      }
+      .Moving {
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+      .Moving {
+        @include cards();
+
+        & p {
+          @include cardsName();
+        }
+      }
+    }
+  }
+}
+.minor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-background-color);
+  height: 714px;
+  gap: 50px;
+  
+
+  .Testymonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include maxBlockWidth();
+    gap: 50px;
+    margin-top: 63px;
+
+    & h1 {
+      color: var(--primary-color);
+      font-size: var(--headers-font-size);
+    }
+
+    .cards_comments{
+      display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    @include maxBlockWidth();
+    margin: 0 365px 0 369px;
+    
+    .username_1 {
+      @include comments();
+      & p {
+        color: var(--tertiary-color);
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 50px;
+      }
+      .comment_1 {
+        margin: 0;
+            
+        & p {
+          color: #333333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px 50px 20px 50px;
+        }
+        .rating_1 {
+          display: flex;
+          flex-direction: row;
+          margin-left: 50px;
+          gap: 5px;
+        }
+      }
+    }
+   
+    .username_2 {
+      @include comments();
+      & p {
+        color: var(--tertiary-color);
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 50px;
+      }
+      .comment_2 {
+        margin: 0;
+            
+        & p {
+          color: #333333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px 50px 20px 50px;
+        }
+        .rating_2 {
+          display: flex;
+          flex-direction: row;
+          margin-left: 50px;
+          gap: 5px;
+        }
+      }
+    }
+   
+    .username_3 {
+      @include comments();
+      & p {
+        color: var(--tertiary-color);
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 50px;
+      }
+      .comment_3 {
+        margin: 0;
+            
+        & p {
+          color: #333333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px 50px 20px 50px;
+        }
+        .rating_3 {
+          display: flex;
+          flex-direction: row;
+          margin-left: 50px;
+          gap: 5px;
+        }
+      }
+    }
+    
+    .username_4 {
+      @include comments();
+      & p {
+        color: var(--tertiary-color);
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 50px;
+      }
+      .comment_4 {
+        margin: 0;
+            
+        & p {
+          color: #333333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px 50px 20px 50px;
+        }
+        .rating_4 {
+          display: flex;
+          flex-direction: row;
+          margin-left: 50px;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+}
