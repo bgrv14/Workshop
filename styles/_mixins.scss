@@ -25,34 +25,58 @@
   border-radius: 20px;
   width: 262px;
   height: 269px;
-  margin: 0;  
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-@mixin comments() {
-    background-color: var(--main-background-color);
-    border: var(--tertiary-color) solid 1px;
-    border-radius: 30px;
-    border-color: var(--tertiary-color);
-    width: 512px;
-    height: 192px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: 50px 0 0 50px;
+@mixin comments_card() {
+  background-color: var(--main-background-color);
+  border: var(--tertiary-color) solid 1px;
+  border-radius: 30px;
+  width: 512px;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 50px 0 0 50px;
 }
-/*
-
-
-
-@mixin section($url, $position) {
-    background: linear-gradient(180deg, var(--main-background-color) 29.73%, var(--quaternary-color) 100%), url($url) no-repeat $position;
+@mixin rating() {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
+@mixin fieldInForm() {
+  background-color: var(--form-color);
+  border: solid 0px;
+  border-radius: 61px;
+  width: 374px;
+  height: 56px;
+  margin: 0 0 14px 0;
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+  text-decoration: solid;
 
-@mixin activeButton() {
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
+  padding-left: 20px;
 }
-*/
+@mixin fieldInForm_ph() {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+@mixin button() {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 168px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  background: var(--quinary-color);
+  border: 3px solid #616194;
+  border-radius: 61px;
+  color: var(--tertiary-color);
+}

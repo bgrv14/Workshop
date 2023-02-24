@@ -1,45 +1,17 @@
 :root {
-  --primary-color: #9797C6; /*2-d background, titles text*/
-  --secondary-color: #9898C6; /*color for text*/
+  --primary-color: #9797c6; /*2-d background, titles text*/
+  --secondary-color: #9898c6; /*color for text*/
   --tertiary-color: #616194; /*for TESTYMONIALS cards color*/
-  --quaternary-color: #FFFFFF; /*2-d titles text*/
-  --quinary-color: #F8F8FF; /*background for contact us*/
-  --form-color: #CECEF9;
-  --main-background-color: #FFFFFF;
+  --quaternary-color: #ffffff; /*2-d titles text*/
+  --quinary-color: #f8f8ff; /*background for contact us*/
+  --form-color: #cecef9;
+  --main-background-color: #ffffff;
   --headers-font-size: 64px;
   --headers-line-height: 80px;
   --max-width: 1920px;
   --border-radius: 20px;
 }
 
-/*
-    --gray: #928CAB;
-    --gray-light: #D4CDEF;
-
-    --header-line-color: #F4F5F4;
-
-
-    --border-radius: 8px;
-    --section-border-radius: 250px;
-    --max-width: 1920px;
-    --primary-space: 20px;
-    --secondary-space: 12px;
-
-}
-*/
-/*
-
-
-
-@mixin section($url, $position) {
-    background: linear-gradient(180deg, var(--main-background-color) 29.73%, var(--quaternary-color) 100%), url($url) no-repeat $position;
-}
-
-@mixin activeButton() {
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
-}
-*/
 /*General styles*/
 html {
   margin: 0 auto;
@@ -56,6 +28,13 @@ h1 {
   margin: 0;
   line-height: var(--headers-line-height);
   font-weight: 900;
+}
+
+h2 {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .heading-wrapper {
@@ -439,7 +418,7 @@ h1 {
   margin: 0 auto;
   max-width: 1920px;
   gap: 50px;
-  margin-top: 63px;
+  margin-top: 100px;
 }
 .minor .Testymonials h1 {
   color: var(--primary-color);
@@ -452,13 +431,12 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1920px;
-  margin: 0 365px 0 369px;
+  margin: -50px 365px 0 369px;
 }
-.minor .Testymonials .cards_comments .username_1 {
+.minor .Testymonials .cards_comments .card_1 {
   background-color: var(--main-background-color);
   border: var(--tertiary-color) solid 1px;
   border-radius: 30px;
-  border-color: var(--tertiary-color);
   width: 512px;
   height: 192px;
   display: flex;
@@ -467,34 +445,27 @@ h1 {
   justify-content: left;
   margin: 50px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_1 p {
-  color: var(--tertiary-color);
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
+.minor .Testymonials .cards_comments .card_1 .username_1 h2 {
   margin: 20px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_1 .comment_1 {
+.minor .Testymonials .cards_comments .card_1 .comment_1 {
   margin: 0;
 }
-.minor .Testymonials .cards_comments .username_1 .comment_1 p {
+.minor .Testymonials .cards_comments .card_1 .comment_1 p {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 10px 50px 20px 50px;
 }
-.minor .Testymonials .cards_comments .username_1 .comment_1 .rating_1 {
-  display: flex;
-  flex-direction: row;
+.minor .Testymonials .cards_comments .card_1 .rating_1 {
   margin-left: 50px;
-  gap: 5px;
+  margin-bottom: 20px;
 }
-.minor .Testymonials .cards_comments .username_2 {
+.minor .Testymonials .cards_comments .card_2 {
   background-color: var(--main-background-color);
   border: var(--tertiary-color) solid 1px;
   border-radius: 30px;
-  border-color: var(--tertiary-color);
   width: 512px;
   height: 192px;
   display: flex;
@@ -503,34 +474,27 @@ h1 {
   justify-content: left;
   margin: 50px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_2 p {
-  color: var(--tertiary-color);
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
+.minor .Testymonials .cards_comments .card_2 .username_2 h2 {
   margin: 20px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_2 .comment_2 {
+.minor .Testymonials .cards_comments .card_2 .comment_2 {
   margin: 0;
 }
-.minor .Testymonials .cards_comments .username_2 .comment_2 p {
+.minor .Testymonials .cards_comments .card_2 .comment_2 p {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 10px 50px 20px 50px;
 }
-.minor .Testymonials .cards_comments .username_2 .comment_2 .rating_2 {
-  display: flex;
-  flex-direction: row;
+.minor .Testymonials .cards_comments .card_2 .rating_2 {
   margin-left: 50px;
-  gap: 5px;
+  margin-bottom: 20px;
 }
-.minor .Testymonials .cards_comments .username_3 {
+.minor .Testymonials .cards_comments .card_3 {
   background-color: var(--main-background-color);
   border: var(--tertiary-color) solid 1px;
   border-radius: 30px;
-  border-color: var(--tertiary-color);
   width: 512px;
   height: 192px;
   display: flex;
@@ -539,34 +503,27 @@ h1 {
   justify-content: left;
   margin: 50px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_3 p {
-  color: var(--tertiary-color);
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
+.minor .Testymonials .cards_comments .card_3 .username_3 h2 {
   margin: 20px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_3 .comment_3 {
+.minor .Testymonials .cards_comments .card_3 .comment_3 {
   margin: 0;
 }
-.minor .Testymonials .cards_comments .username_3 .comment_3 p {
+.minor .Testymonials .cards_comments .card_3 .comment_3 p {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 10px 50px 20px 50px;
 }
-.minor .Testymonials .cards_comments .username_3 .comment_3 .rating_3 {
-  display: flex;
-  flex-direction: row;
+.minor .Testymonials .cards_comments .card_3 .rating_3 {
   margin-left: 50px;
-  gap: 5px;
+  margin-bottom: 20px;
 }
-.minor .Testymonials .cards_comments .username_4 {
+.minor .Testymonials .cards_comments .card_4 {
   background-color: var(--main-background-color);
   border: var(--tertiary-color) solid 1px;
   border-radius: 30px;
-  border-color: var(--tertiary-color);
   width: 512px;
   height: 192px;
   display: flex;
@@ -575,26 +532,204 @@ h1 {
   justify-content: left;
   margin: 50px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_4 p {
-  color: var(--tertiary-color);
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
+.minor .Testymonials .cards_comments .card_4 .username_4 h2 {
   margin: 20px 0 0 50px;
 }
-.minor .Testymonials .cards_comments .username_4 .comment_4 {
+.minor .Testymonials .cards_comments .card_4 .comment_4 {
   margin: 0;
 }
-.minor .Testymonials .cards_comments .username_4 .comment_4 p {
+.minor .Testymonials .cards_comments .card_4 .comment_4 p {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 10px 50px 20px 50px;
 }
-.minor .Testymonials .cards_comments .username_4 .comment_4 .rating_4 {
+.minor .Testymonials .cards_comments .card_4 .rating_4 {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  background-color: var(--quinary-color);
+  height: 554px;
+}
+.footer .footer_title h1 {
+  color: var(--primary-color);
+  font-size: var(--headers-font-size);
+  margin: 50px 0 108px 0;
+}
+.footer .all_contact {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
-  gap: 5px;
+  justify-content: space-between;
+  width: 1920px;
+  margin: 0;
+}
+.footer .all_contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 558px;
+}
+.footer .all_contact .contact-form input[type=text] {
+  background-color: var(--form-color);
+  border: solid 0px;
+  border-radius: 61px;
+  width: 374px;
+  height: 56px;
+  margin: 0 0 14px 0;
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  padding-left: 20px;
+}
+.footer .all_contact .contact-form ::-moz-placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form ::placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form input[type=email] {
+  background-color: var(--form-color);
+  border: solid 0px;
+  border-radius: 61px;
+  width: 374px;
+  height: 56px;
+  margin: 0 0 14px 0;
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  padding-left: 20px;
+}
+.footer .all_contact .contact-form input[type=email] input:invalid {
+  border: 1px solid #ed0131;
+}
+.footer .all_contact .contact-form ::-moz-placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form ::placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form input[type=tel] {
+  background-color: var(--form-color);
+  border: solid 0px;
+  border-radius: 61px;
+  width: 374px;
+  height: 56px;
+  margin: 0 0 14px 0;
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  padding-left: 20px;
+}
+.footer .all_contact .contact-form ::-moz-placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form ::placeholder {
+  color: var(--quinary-color);
+  opacity: 70;
+  font-size: 15px;
+}
+.footer .all_contact .contact-form input[type=submit] {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 168px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  background: var(--quinary-color);
+  border: 3px solid #616194;
+  border-radius: 61px;
+  color: var(--tertiary-color);
+}
+.footer .all_contact .contact-form input:focus {
+  outline: 1px solid #0048d9;
+}
+.footer .all_contact .our__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 28px 557px 0 0;
+}
+.footer .all_contact .our__contact .our_email {
+  background: url("../assets/ic_round-mail.png") no-repeat;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 30px 0;
+  height: 24px;
+}
+.footer .all_contact .our__contact .our_email p {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.footer .all_contact .our__contact .our_phone {
+  background: url("../assets/ic_round-call.png") no-repeat center left;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  margin: 0 0 30px 0;
+}
+.footer .all_contact .our__contact .our_phone p {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.footer .all_contact .our__contact .our_addres {
+  background: url("../assets/ic_round-location-on.png") no-repeat center left;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 30px 0;
+  height: 24px;
+}
+.footer .all_contact .our__contact .our_addres p {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.footer_end {
+  background-color: #454557;
+  width: 1920px;
+  height: 117px;
 }/*# sourceMappingURL=styles.css.map */

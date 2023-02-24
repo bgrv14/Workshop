@@ -15,6 +15,12 @@ h1 {
   line-height: var(--headers-line-height);
   font-weight: 900;
 }
+h2 {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 .heading-wrapper {
   margin: 0 auto;
@@ -154,7 +160,6 @@ h1 {
         & p {
           @include cardsName;
         }
-       
       }
       .Plumber {
         background: url("../assets/Plumbers.png") no-repeat center;
@@ -268,14 +273,13 @@ h1 {
     }
   }
 }
-.minor{
+.minor {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--main-background-color);
   height: 714px;
   gap: 50px;
-  
 
   .Testymonials {
     display: flex;
@@ -283,132 +287,243 @@ h1 {
     align-items: center;
     @include maxBlockWidth();
     gap: 50px;
-    margin-top: 63px;
+    margin-top: 100px;
 
     & h1 {
       color: var(--primary-color);
       font-size: var(--headers-font-size);
     }
 
-    .cards_comments{
+    .cards_comments {
       display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    @include maxBlockWidth();
-    margin: 0 365px 0 369px;
-    
-    .username_1 {
-      @include comments();
-      & p {
-        color: var(--tertiary-color);
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 20px 0 0 50px;
-      }
-      .comment_1 {
-        margin: 0;
-            
-        & p {
-          color: #333333;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          margin: 10px 50px 20px 50px;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      @include maxBlockWidth();
+      margin: -50px 365px 0 369px;
+
+      .card_1 {
+        @include comments_card();
+
+        .username_1 {
+          h2 {
+            margin: 20px 0 0 50px;
+          }
+        }
+        .comment_1 {
+          margin: 0;
+
+          & p {
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 50px 20px 50px;
+          }
         }
         .rating_1 {
-          display: flex;
-          flex-direction: row;
-          margin-left: 50px;
-          gap: 5px;
+          @include rating;
         }
       }
-    }
-   
-    .username_2 {
-      @include comments();
-      & p {
-        color: var(--tertiary-color);
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 20px 0 0 50px;
-      }
-      .comment_2 {
-        margin: 0;
-            
-        & p {
-          color: #333333;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          margin: 10px 50px 20px 50px;
+
+      .card_2 {
+        @include comments_card();
+
+        .username_2 {
+          h2 {
+            margin: 20px 0 0 50px;
+          }
+        }
+        .comment_2 {
+          margin: 0;
+
+          & p {
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 50px 20px 50px;
+          }
         }
         .rating_2 {
-          display: flex;
-          flex-direction: row;
-          margin-left: 50px;
-          gap: 5px;
+          @include rating;
         }
       }
-    }
-   
-    .username_3 {
-      @include comments();
-      & p {
-        color: var(--tertiary-color);
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 20px 0 0 50px;
-      }
-      .comment_3 {
-        margin: 0;
-            
-        & p {
-          color: #333333;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          margin: 10px 50px 20px 50px;
+
+      .card_3 {
+        @include comments_card();
+
+        .username_3 {
+          h2 {
+            margin: 20px 0 0 50px;
+          }
+        }
+        .comment_3 {
+          margin: 0;
+
+          & p {
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 50px 20px 50px;
+          }
         }
         .rating_3 {
-          display: flex;
-          flex-direction: row;
-          margin-left: 50px;
-          gap: 5px;
+          @include rating;
         }
       }
-    }
-    
-    .username_4 {
-      @include comments();
-      & p {
-        color: var(--tertiary-color);
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 20px 0 0 50px;
-      }
-      .comment_4 {
-        margin: 0;
-            
-        & p {
-          color: #333333;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          margin: 10px 50px 20px 50px;
+
+      .card_4 {
+        @include comments_card();
+
+        .username_4 {
+          h2 {
+            margin: 20px 0 0 50px;
+          }
+        }
+        .comment_4 {
+          margin: 0;
+
+          & p {
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 50px 20px 50px;
+          }
         }
         .rating_4 {
-          display: flex;
-          flex-direction: row;
-          margin-left: 50px;
-          gap: 5px;
+          @include rating;
         }
       }
     }
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include maxBlockWidth();
+  background-color: var(--quinary-color);
+  height: 554px;
+
+  .footer_title {
+    & h1 {
+      color: var(--primary-color);
+      font-size: var(--headers-font-size);
+      margin: 50px 0 108px 0;
+    }
+  }
+  .all_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1920px;
+    margin: 0;
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 0 558px;
+
+      input[type="text"] {
+        @include fieldInForm();
+      }
+      ::placeholder {
+        @include fieldInForm_ph();
+      }
+
+      input[type="email"] {
+        @include fieldInForm();
+        input:invalid {
+          border: 1px solid #ed0131;
+        }
+      }
+      ::placeholder {
+        @include fieldInForm_ph();
+      }
+
+      input[type="tel"] {
+        @include fieldInForm();
+      }
+      ::placeholder {
+        @include fieldInForm_ph();
+      }
+      input[type="submit"] {
+        @include button();
+      }
+      input:focus {
+        outline: 1px solid #0048d9;
+      }
+    }
+    .our__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin: 28px 557px 0 0;
+
+      .our_email {
+        background: url("../assets/ic_round-mail.png") no-repeat;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 30px 0;
+        height: 24px;
+
+        & p {
+          margin: 0 0 0 50px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #333333;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+        }
+      }
+      .our_phone {
+        background: url("../assets/ic_round-call.png") no-repeat center left;
+        display: flex;
+        flex-direction: row;
+        height: 24px;
+        margin: 0 0 30px 0;
+
+        & p {
+          margin: 0 0 0 50px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #333333;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+        }
+      }
+      .our_addres {
+        background: url("../assets/ic_round-location-on.png") no-repeat center
+          left;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 30px 0;
+        height: 24px;
+        & p {
+          margin: 0 0 0 50px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #333333;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.footer_end {
+  background-color: #454557;
+  width: 1920px;
+  height: 117px;
 }
