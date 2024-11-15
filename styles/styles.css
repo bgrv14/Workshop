@@ -14,13 +14,17 @@
 
 /*General styles*/
 html {
-  margin: 0 auto;
-  max-width: 1920px;
+  margin: 0;
+  width: 100%;
 }
 
 body {
   font-family: "TT Hoves";
   margin: 0;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 h1 {
@@ -39,6 +43,7 @@ h2 {
 
 .heading-wrapper {
   margin: 0 auto;
+  width: 100%;
 }
 
 /* Page styles */
@@ -97,6 +102,22 @@ h2 {
   max-width: 1920px;
   margin: 0;
 }
+@media screen and (max-width: 1290px) {
+  .heading-wrapper .title .logo {
+    font-size: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .heading-wrapper .title .logo {
+    font-size: 190px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .heading-wrapper .title .logo p {
   margin: -30px 0 0 0;
 }
@@ -143,9 +164,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
   background-color: var(--primary-color);
-  height: 1335px;
-  gap: 50px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
 }
 .main .services {
   display: flex;
@@ -153,8 +177,10 @@ h2 {
   align-items: center;
   margin: 0 auto;
   max-width: 1920px;
-  gap: 50px;
+  gap: 70px;
   margin-top: 63px;
+  margin-bottom: 100px;
+  width: 100%;
 }
 .main .services h1 {
   color: var(--quaternary-color);
@@ -163,8 +189,16 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 52px;
-  margin: 0 22rem 0 22rem;
+  gap: 50px;
+  margin: 0 22em 0 22em;
+  /*.services-cards {
+    display: grid;
+    grid-template-areas: "Handymancard Plumbercard Bike-Repaircard Cleaningcard" 
+    "Movingcard Lawncarecard Trash-Haulingcard Anycard";
+    justify-content: left;
+    gap: 52px;
+    align-content: center;
+    */
 }
 .main .services .services-cards .Handyman {
   background: url("../assets/Handyman.png") no-repeat center;
@@ -315,8 +349,9 @@ h2 {
   align-items: center;
   margin: 0 auto;
   max-width: 1920px;
-  gap: 50px;
+  gap: 70px;
   margin: 0;
+  width: 100%;
 }
 .main .anyServices h1 {
   color: var(--quaternary-color);
@@ -325,8 +360,8 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 52px;
-  margin: 0 22rem 0 22rem;
+  margin: 0 22em 0 22em;
+  gap: 50px;
 }
 .main .anyServices .services-cards .LK {
   background: url("../assets/LK.jpg") no-repeat center;
@@ -408,17 +443,19 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: var(--main-background-color);
-  height: 714px;
   gap: 50px;
+  margin: 0 auto;
+  max-width: 1920px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 .minor .Testymonials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  max-width: 1920px;
   gap: 50px;
   margin-top: 100px;
+  width: 100%;
 }
 .minor .Testymonials h1 {
   color: var(--primary-color);
@@ -431,7 +468,7 @@ h2 {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1920px;
-  margin: -50px 365px 0 369px;
+  margin: 0 22em 0 22em;
 }
 .minor .Testymonials .cards_comments .card_1 {
   background-color: var(--main-background-color);
@@ -566,16 +603,17 @@ h2 {
 }
 .footer .all_contact {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1920px;
+  width: 100%;
   margin: 0;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: center;
 }
 .footer .all_contact .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 0 558px;
+  margin-right: 100px;
 }
 .footer .all_contact .contact-form input[type=text] {
   background-color: var(--form-color);
@@ -616,7 +654,7 @@ h2 {
   padding-left: 20px;
 }
 .footer .all_contact .contact-form input[type=email] input:invalid {
-  border: 1px solid #ed0131;
+  border: 1px solid #ED0131;
 }
 .footer .all_contact .contact-form ::-moz-placeholder {
   color: var(--quinary-color);
@@ -658,6 +696,7 @@ h2 {
   justify-content: center;
   width: 168px;
   height: 56px;
+  margin-top: 5px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -668,13 +707,12 @@ h2 {
   color: var(--tertiary-color);
 }
 .footer .all_contact .contact-form input:focus {
-  outline: 1px solid #0048d9;
+  outline: 1px solid #0048D9;
 }
 .footer .all_contact .our__contact {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 28px 557px 0 0;
 }
 .footer .all_contact .our__contact .our_email {
   background: url("../assets/ic_round-mail.png") no-repeat;
@@ -730,6 +768,7 @@ h2 {
 
 .footer_end {
   background-color: #454557;
-  width: 1920px;
+  margin: 0 auto;
+  max-width: 1920px;
   height: 117px;
 }/*# sourceMappingURL=styles.css.map */
